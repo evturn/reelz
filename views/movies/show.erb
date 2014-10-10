@@ -1,0 +1,10 @@
+<h2><%= @movie.title %>
+	</h2>
+
+<ul>
+	<% @tags.each do |tag| %>
+		<li>
+			<%= tag.name%>
+		</li>
+	<% end %>
+</ul>
