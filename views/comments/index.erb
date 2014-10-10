@@ -1,0 +1,9 @@
+<h2><%= @movie.title %></h2>
+
+<ul>
+  <% @comments.each do |comment|%>
+    <li>
+      <%= comment.bod%>
+    </li>
+  <% end %>
+</ul>

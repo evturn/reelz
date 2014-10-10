@@ -1,0 +1,5 @@
+<form action="/movies/<%= @movie.id %>/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="comment_bod" value="<%= @comment.bod %>">
+  <input type="submit">
+</form>

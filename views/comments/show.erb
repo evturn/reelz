@@ -1,0 +1,11 @@
+<h2><%= @movie.title %></h2>
+<h2><%= @comment.bod %></h2>
+
+<a href="/movies/<%= @movie.id %>/comments/<%= @comment.id %>/edit">
+  Edit
+</a>
+
+<form action="/movies/<%= @movie.id %>/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
